@@ -1,0 +1,104 @@
+﻿@model SafraEmprestimo.Domain.Dtos.EmprestimoDto
+@{
+    ViewData["Title"] = "Empréstimos";
+}
+
+<div id="pad-wrapper">
+
+    <div class="row">
+        <div class="col-md-12">
+            <a href="/Emprestimos" class="btn">Voltar</a>
+        </div>
+    </div>
+    <div class="row header">
+        <div class="col-md-1">
+            <h3>Empréstimo</h3>
+        </div>
+    </div>
+    <div class="row form-wrapper">
+        <div class="col-md-12">
+            <form id="form" class="form-horizontal" asp-action="Salvar" asp-controller="Emprestimo" asp-anti-forgery
+                  data-ajax="true" data-ajax-method="POST" data-ajax-failure="formQuandoFalha" data-ajax-success="window.location = '/Emprestimo'">
+                <input type="hidden" class="form-control" asp-for="Id">
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Tipo Crédito</label>
+                    <div class="col-md-2">
+                        <select class="form-control" asp-for="TipoCredito">
+                            <option value="Direto">Direto</option>
+                            <option value="Consignado">Consignado</option>
+                            <option value="PessoaJuridica">PessoaJuridica</option>
+                            <option value="PessoaFisica">PessoaFisica</option>
+                            <option value="Imobiliario">Imobiliario</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Nro Parcelas</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" asp-for="QuantidadeParcelas">
+                        <span asp-validation-for="QuantidadeParcelas" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Data Primeiro Vencimento</label>
+                    <div class="col-md-8">
+                        <textarea type="text" class="form-control" asp-for="DataPrimeiroVencimento"></textarea>
+                        <span asp-validation-for="DataPrimeiroVencimento" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Valor</label>
+                    <div class="col-md-2">
+                        <input class="form-control" asp-for="Valor">
+                        <span asp-validation-for="Valor" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Valor Total C/ Juros</label>
+                    <div class="col-md-2">
+                        <input class="form-control" asp-for="ValorTotalComJuros">
+                        <span asp-validation-for="ValorTotalComJuros" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Valor Juros</label>
+                    <div class="col-md-2">
+                        <input class="form-control" asp-for="ValorJuros">
+                        <span asp-validation-for="ValorJuros" class="text-danger"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 control-label">Status</label>
+                    <div class="col-md-2">
+                        <select class="form-control" asp-for="StatusCredito">
+                            <option value="Liberado">Liberado</option>
+                            <option value="Analisando">Analisando</option>
+                            <option value="Recusado">Recusado</option>
+                            <option value="Erro">Erro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-8">
+                        <button class="btn btn-success">Salvar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/jquery.validate.unobtrusive.js"></script>
+    <script src="/js/jquery.unobtrusive-ajax.min.js"></script>
+    <script src="/js/excecaoDeDominio.js"></script>
+}
+
+
+
+
+
+

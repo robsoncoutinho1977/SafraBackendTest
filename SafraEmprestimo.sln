@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafraEmprestimo.DomainTest", "SafraEmprestimo.DomainTest\SafraEmprestimo.DomainTest.csproj", "{4EDCDEDD-3E4C-43A0-BB23-9F6434598640}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafraEmprestimo.Domain", "SafraEmprestimo.Domain\SafraEmprestimo.Domain.csproj", "{B118D1FA-8D21-4890-AA44-1D6A7D8EE29F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafraEmprestimo.Service", "SafraEmprestimo.Service\SafraEmprestimo.Service.csproj", "{0BB887FA-4598-4C48-81CB-14ECB0ADF6BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafraEmprestimo.Data", "SafraEmprestimo.Data\SafraEmprestimo.Data.csproj", "{5BF451C5-93EF-4636-9EE8-D36D938C9556}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafraEmprestimo.Ioc", "SafraEmprestimo.Ioc\SafraEmprestimo.Ioc.csproj", "{984350A0-5F1E-498C-B4E6-58B7893C751D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SafraEmprestimo.Web", "SafraEmprestimo.Web\SafraEmprestimo.Web.csproj", "{A0AD9281-797E-462B-A9D8-FEB0051BA2C4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EDCDEDD-3E4C-43A0-BB23-9F6434598640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EDCDEDD-3E4C-43A0-BB23-9F6434598640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EDCDEDD-3E4C-43A0-BB23-9F6434598640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EDCDEDD-3E4C-43A0-BB23-9F6434598640}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B118D1FA-8D21-4890-AA44-1D6A7D8EE29F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B118D1FA-8D21-4890-AA44-1D6A7D8EE29F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B118D1FA-8D21-4890-AA44-1D6A7D8EE29F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B118D1FA-8D21-4890-AA44-1D6A7D8EE29F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BB887FA-4598-4C48-81CB-14ECB0ADF6BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BB887FA-4598-4C48-81CB-14ECB0ADF6BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BB887FA-4598-4C48-81CB-14ECB0ADF6BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BB887FA-4598-4C48-81CB-14ECB0ADF6BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BF451C5-93EF-4636-9EE8-D36D938C9556}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BF451C5-93EF-4636-9EE8-D36D938C9556}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BF451C5-93EF-4636-9EE8-D36D938C9556}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BF451C5-93EF-4636-9EE8-D36D938C9556}.Release|Any CPU.Build.0 = Release|Any CPU
+		{984350A0-5F1E-498C-B4E6-58B7893C751D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{984350A0-5F1E-498C-B4E6-58B7893C751D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{984350A0-5F1E-498C-B4E6-58B7893C751D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{984350A0-5F1E-498C-B4E6-58B7893C751D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0AD9281-797E-462B-A9D8-FEB0051BA2C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0AD9281-797E-462B-A9D8-FEB0051BA2C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0AD9281-797E-462B-A9D8-FEB0051BA2C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0AD9281-797E-462B-A9D8-FEB0051BA2C4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9014AC9-80A1-4069-99CC-245478D04FB5}
+	EndGlobalSection
+EndGlobal
